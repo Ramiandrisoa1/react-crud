@@ -12,6 +12,7 @@ class Form extends Component {
   submitForm = () => {
     this.props.handleSubmit(this.state);
     this.setState(this.initialState);
+    this.props.closeModal();
   };
 
   initialState = {
